@@ -14,7 +14,7 @@ Este proyecto está pensado como un juego sin fines de lucro y accesible para to
 
 ## Instalación
 
-No es necesario instalar nada para jugarlo. Puedes probarlo directamente en GitHub Pages en el siguiente enlace: `[URL del Proyecto Eva en GitHub Pages]`.
+No es necesario instalar nada para jugarlo. Puedes probarlo directamente en GitHub Pages en el siguiente enlace: `[https://hidr4lisk.github.io/Proyecto_Eva/]`.
 
 Si deseas ejecutar el juego en tu entorno local, sigue estos pasos:
 
