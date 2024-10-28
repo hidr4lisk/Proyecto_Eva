@@ -1,0 +1,12 @@
+[
+  {
+      "id": 0,
+      "nombre": "",
+      "nivel": 0,
+      "salud": 0,
+      "mana": 0,
+      "fuerza": 0,
+      "defensa": 0,
+      "agilidad": 0
+  }
+]
