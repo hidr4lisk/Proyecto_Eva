@@ -1,6 +1,6 @@
 # Proyecto Eva
 
-**Proyecto Eva** es un juego de plataformas simple inspirado en los clásicos como Mario. La idea es ofrecer una experiencia divertida, accesible desde cualquier navegador a través de GitHub Pages.
+**Proyecto Eva** es un juego de combates por turnos al estilo final fantasy
 
 ## Descripción
 
@@ -8,9 +8,7 @@ Este proyecto está pensado como un juego sin fines de lucro y accesible para to
 
 ## Cómo Jugar
 
-1. Usa las teclas de dirección para mover al personaje de izquierda a derecha.
-2. Presiona la tecla de salto para evitar obstáculos y alcanzar plataformas.
-3. El objetivo es llegar al final de cada nivel sin caer en trampas.
+Todavía no esta determinada la forma de jugar, pero va a ser online y con teclado
 
 ## Instalación
 

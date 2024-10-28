@@ -1,0 +1,34 @@
+{
+    "personajes": [
+      {
+        "nombre": "Eva",
+        "nivel": 0,
+        "salud": 0,
+        "mana": 0,
+        "fuerza": 0,
+        "defensa": 0,
+        "agilidad": 0,
+        "habilidades": [
+          {
+            "nombre": "",
+            "tipo": "",
+            "daño": 0,
+            "costo_mana": 0
+          }
+        ],
+        "equipo": {
+          "arma": {
+            "nombre": "",
+            "ataque": 0,
+            "tipo": ""
+          },
+          "armadura": {
+            "nombre": "",
+            "defensa": 0,
+            "tipo": ""
+          }
+        }
+      }
+    ]
+  }
+  

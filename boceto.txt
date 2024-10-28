@@ -1,0 +1,10 @@
+Va a ser un juego de aventura al estilo final fantasy.
+
+Objetivos parciales:
+
+Lograr un "personaje" , sería una Clase Personaje, con sus determinadas caracteristicas.
+
+Lograr un Escenario.
+
+Los "Personajes" deberían estar en un archivo separado donde una funcion tome el valor de cada personaje.
+
