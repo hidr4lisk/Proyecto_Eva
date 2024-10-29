@@ -1,10 +1,13 @@
-Va a ser un juego de aventura al estilo final fantasy.
-
-Objetivos parciales:
-
-Lograr un "personaje" , sería una Clase Personaje, con sus determinadas caracteristicas.
-
-Lograr un Escenario.
-
-Los "Personajes" deberían estar en un archivo separado donde una funcion tome el valor de cada personaje.
-
+/mi-juego/
+|-- index.html      // Archivo principal HTML que carga el juego
+|-- data.json       // Archivo JSON con los datos de personajes y monstruos
+|-- /images/        // Carpeta que contiene las imágenes utilizadas en el juego
+|   |-- image1.png  // Imagen del padre contando el cuento
+|   |-- image2.png  // Imagen de la niña despidiéndose
+|   |-- image3.png  // Imagen del padre en primer plano
+|   |-- image4.png  // Imagen del padre desenfundando la espada
+|-- main.js         // Archivo principal de JavaScript que controla el flujo del juego
+|-- animation.js     // Funciones para manejar la animación inicial
+|-- combat.js       // Lógica de combate y gestión de oleadas
+|-- store.js        // Lógica de la tienda y mejoras
+|-- data_loader.js   // Funciones para cargar datos desde JSON

@@ -1,114 +1,25 @@
-/* Estilos generales */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco para contraste */
+    font-family: Arial, sans-serif; /* Fuente general */
+    height: 100vh; /* Altura total de la ventana */
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+#game-container {
+    display: flex; /* Usar flexbox para el contenedor del juego */
+    flex-direction: column; /* Colocar elementos en columna */
+    align-items: center; /* Centrar los elementos en el contenedor */
+    justify-content: center; /* Asegurarse de que todo esté centrado */
 }
 
-/* Mensajes de sistema en la parte superior */
-.system-messages {
-    height: 12.5%; /* 1/8 de la pantalla */
-    background-color: #5f9ea0; /* Color oscuro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#animation {
+    max-width: 100%; /* Asegurar que la imagen no sobrepase el ancho de la pantalla */
+    height: auto; /* Mantener la relación de aspecto */
 }
 
-/* Contenedor principal que divide en 3 secciones: inventario, pantalla de juego, cuadro de textos */
-.main-container {
-    display: flex;
-    flex: 6; /* 6/8 de la pantalla */
-    background-color: #add8e6; /* Color intermedio */
-}
-
-/* Pantalla de juego en el centro */
-.game-screen {
-    flex: 1;
-    background-color: #6495ed; /* Tonalidad diferente del mismo color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Imagen de fondo comentada */
-    /* background-image: url('ruta/a/tu/mapa.jpg'); */
-    /* background-size: cover; */
-}
-
-/* Cuadro de textos a la derecha */
-.text-box {
-    width: 20%;
-    background-color: #4682b4; /* Tonalidad diferente del mismo color */
-    display: flex;
-    flex-direction: column;
-}
-
-/* Mensajes de entrada y salida (5/6 del cuadro) */
-.text-messages {
-    flex: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Entrada de texto (1/6 del cuadro) */
-.text-input {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #721672;
-}
-
-/* Barra de salud, nivel, y habilidades en la parte inferior */
-.status-bar {
-    height: 12.5%; /* 1/8 de la pantalla */
-    background-color: #b0e0e6; /* Color claro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Inventario a la izquierda */
-.inventory {
-    width: 20%;
-    background-color: #87cefa; /* Tonalidad diferente del mismo color */
-    display: flex;
-    flex-direction: column;
-}
-
-/* Opciones de inventario (1/6) */
-.inventory-options {
-    flex: 1; /* 1/6 de la sección de inventario */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Sección de la tabla de inventario (5/6) */
-.inventory-grid {
-    flex: 5; /* 5/6 de la sección de inventario */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Estilo para la tabla de 4x4 */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-    gap: 10px; /* Espacio entre los ítems */
-}
-
-/* Estilo para cada ítem */
-.item {
-    background-color: #f0f8ff; /* Color de fondo de los ítems */
-    border: 1px solid #ccc; /* Borde de los ítems */
-    text-align: center;
-    padding: 35px 10px; /* Padding vertical de 20px, horizontal de 10px */
-}
+/* Puedes agregar más estilos aquí para el juego */

@@ -1,71 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Eva</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mi Juego de Peleas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculación del archivo CSS -->
 </head>
 <body>
-    <!-- Mensajes de sistema en la parte superior -->
-    <div class="system-messages">
-        <p>Mensajes del Sistema</p>
-    </div>
-    
-    <!-- Sección principal con inventario, mapa, y cuadro de textos -->
-    <div class="main-container">
-    <!-- Inventario -->
-    <div class="inventory">
-        <div class="inventory-options">
-            <p>Botones de Opciones</p>
-            <!-- Aquí se agregarían los botones -->
-        </div>
-        <div class="inventory-grid">
-            <div class="grid">
-                <!-- Tabla de 4x4 -->
-                <div class="item">Item 1</div>
-                <div class="item">Item 2</div>
-                <div class="item">Item 3</div>
-                <div class="item">Item 4</div>
-                <div class="item">Item 5</div>
-                <div class="item">Item 6</div>
-                <div class="item">Item 7</div>
-                <div class="item">Item 8</div>
-                <div class="item">Item 9</div>
-                <div class="item">Item 10</div>
-                <div class="item">Item 11</div>
-                <div class="item">Item 12</div>
-                <div class="item">Item 13</div>
-                <div class="item">Item 14</div>
-                <div class="item">Item 15</div>
-                <div class="item">Item 16</div>
-            </div>
-        </div>
+    <div id="game-container">
+        <img id="animation" src="images/image1.png" alt="Animación de inicio" />
     </div>
 
-        
-        <!-- Mapa en el centro -->
-        <div class="game-screen">
-            <p>Mapa - Zona Actual</p>
-            <!-- Aquí se colocará la imagen de fondo del mapa -->
-        </div>
-        
-        <!-- Cuadro de textos -->
-        <div class="text-box">
-            <div class="text-messages">
-                <p>Mensajes de Entrada y Salida</p>
-            </div>
-            <div class="text-input">
-                <p>Entrada de Texto</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Barra de salud, nivel, y habilidades en la parte inferior -->
-    <div class="status-bar">
-        <p>Barra de Salud, Nivel, Skills</p>
-    </div>
-    
-    <script type="module" src="script.js"></script>
+    <script src="data_loader.js"></script>
+    <script src="animation.js"></script>
+    <script src="combat.js"></script>
+    <script src="store.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
