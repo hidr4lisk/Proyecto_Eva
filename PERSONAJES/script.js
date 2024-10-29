@@ -8,16 +8,14 @@ const loadJSONData = async () => {
 
         const hot = new Handsontable(container, {
             data: jsonData,
-            colHeaders: ['ID', 'Nombre', 'Nivel', 'Salud', 'Mana', 'Fuerza', 'Defensa', 'Agilidad'],
+            colHeaders: ['ID', 'Nombre', 'Salud', 'Daño', 'Armadura', 'Velocidad'],
             columns: [
                 { data: 'id', type: 'numeric' },
-                { data: 'nombre' },
-                { data: 'nivel', type: 'numeric' },
-                { data: 'salud', type: 'numeric' },
-                { data: 'mana', type: 'numeric' },
-                { data: 'fuerza', type: 'numeric' },
-                { data: 'defensa', type: 'numeric' },
-                { data: 'agilidad', type: 'numeric' }
+                { data: 'name' },
+                { data: 'health', type: 'numeric' },
+                { data: 'damage', type: 'numeric' },
+                { data: 'armor', type: 'numeric' },
+                { data: 'speed', type: 'numeric' }
             ],
             rowHeaders: true,
             licenseKey: 'non-commercial-and-evaluation',
@@ -33,7 +31,7 @@ const loadJSONData = async () => {
 
         // Evento para guardar cambios
         document.getElementById('save-changes').addEventListener('click', () => {
-            const data = hot.getData();
+            const data = hot.getSourceData(); // Utiliza getSourceData() en lugar de getData()
             const jsonData = JSON.stringify(data, null, 2);
 
             // Crear un archivo y forzar su descarga
