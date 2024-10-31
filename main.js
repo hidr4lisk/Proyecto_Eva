@@ -65,7 +65,7 @@ const opcionesFunciones = {
     1: atacar,
     2: abrirInventario,
     3: entrarTienda,
-    4: salir // Cambiado a 3 para que coincida con el índice de "salir"
+    4: salir 
 };
 
 // Función para mostrar el menú y ejecutar la opción seleccionada
