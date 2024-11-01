@@ -2,13 +2,13 @@ const Enemigos = {
     Goblin: { salud: 3, daño: 2, armadura: 1 },
     Espectro: { salud: 2, daño: 3, armadura: 1 },
     Orco: { salud: 4, daño: 3, armadura: 2 }
-};
+}
 
 const Player = {
     salud: 20,
     daño: 2,
     armadura: 0
-};
+}
 
 const Tienda = {
     Pociones: {
@@ -29,45 +29,52 @@ const Tienda = {
         }
     }
 }
+const Inventario = {
+    1: "vacio",
+    2: "vacio",
+    3: "vacio",
+    4: "vacio"
+}
 
-// Definición de las funciones para cada opción
+
+let estancia = "" //en que menú nos encontramos
+let estanciaAnterior = ""
+let campoDeBatalla = [Player]
+
 function atacar() {
-    console.log("Elige tu objetivo para atacar:");
+    console.log("Elige tu objetivo para atacar:")
     const enemigos = Object.keys(Enemigos); // Obtiene los nombres de los enemigos
-    const eleccionEnemigo = menuDeSeleccion(...enemigos);
-    console.log(`Has decidido atacar a ${enemigos[eleccionEnemigo]}`);
+    const eleccionEnemigo = menuDeSeleccion(...enemigos)
+    console.log(`Has decidido atacar a ${enemigos[eleccionEnemigo]}`)
     // Aquí puedes agregar más lógica para realizar el ataque
 }
 
 function salir() {
-    const confirmacion = confirm("¿Estás seguro de que deseas salir del juego?");
+    const confirmacion = confirm("¿Estás seguro de que deseas salir del juego?")
     if (confirmacion) {
-        window.close();
-        console.log("Has salido del juego."); // Mensaje en la consola
+        window.close()
+        console.log("Has salido del juego.") // Mensaje en la consola
     } else {
-        console.log("Continuando en el juego."); // Mensaje si el usuario cancela
+        console.log("Continuando en el juego.") // Mensaje si el usuario cancela
     }
 }
 
 function abrirInventario() {
-    console.log("Abriendo el inventario.");
+    console.log("Abriendo el inventario.")
     // Lógica del inventario aquí
 }
 
 function entrarTienda() {
-    console.log("Bienvenido a la tienda.");
+    console.log("Bienvenido a la tienda.")
     
     // Lógica de la tienda aquí
 }
 
 // Mapeo de las opciones a sus respectivas funciones
 const opcionesFunciones = {
-    1: atacar,
-    2: abrirInventario,
-    3: entrarTienda,
-    4: salir 
-};
-
+    menu_principal: {1: atacar,2: abrirInventario,3: entrarTienda,4: salir }
+    menu_inventario: {inventario}
+    }
 // Función para mostrar el menú y ejecutar la opción seleccionada
 function menuDeSeleccion(...opciones) {
     console.log(`\n                          ${opciones[0]}`)
@@ -96,6 +103,6 @@ function validarIngreso(opciones) {
 }
 
 // Menú principal
-const opciones = ["opciones","ataque", "inventario", "tienda", "salir"];
+const opciones = ["opciones","ataque", "inventario", "tienda", "salir"]
 const eleccion = menuDeSeleccion(...opciones);
 opcionesFunciones[eleccion](); // Ejecuta la función correspondiente
