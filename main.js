@@ -29,17 +29,17 @@ const Tienda = {
         }
     }
 }
-const Inventario = {
-    1: "vacio",
-    2: "vacio",
-    3: "vacio",
-    4: "vacio"
-}
-
+const Inventario = {1: "vacio",2: "vacio",3: "vacio",4: "vacio"}
 
 let estancia = "" //en que menú nos encontramos
 let estanciaAnterior = ""
 let campoDeBatalla = [Player]
+
+function estanciaActual(estancia){
+    if (estancia === "Menú Principal"){
+        
+    }
+}
 
 function atacar() {
     console.log("Elige tu objetivo para atacar:")
